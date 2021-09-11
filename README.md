@@ -29,6 +29,7 @@ that user entered or get a forecast ( 5 days 3 hours ) for current city by enabl
   - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Feature that allows you to more easily write code that interacts with views.
 - [Retrofit](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java.
 - [Glide](https://github.com/bumptech/glide) - For Loading images from Urls.
+- [Location](https://developer.android.com/reference/android/location/Location) -  request the last known location of the user's device
 - [Facebook Shimmer](https://github.com/facebook/shimmer-android) -  Android library that provides an easy way to add a shimmer effect to any view in your Android app.
 - Testing
   - [UI Tests](https://en.wikipedia.org/wiki/Graphical_user_interface_testing) ([Espresso](https://developer.android.com/training/testing/espresso))
