@@ -1,6 +1,6 @@
 # Weather Android App 
 A simple app that hits "https://openweathermap.org" API and show a current weather details for specific cities,
-that user entered or get a forecast ( 5 dday 3 hours ) for current city by enable locationn access
+that user entered or get a forecast ( 5 days 3 hours ) for current city by enable locationn access
 
 ### Demo
 <table>
