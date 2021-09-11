@@ -32,6 +32,7 @@ that user entered or get a forecast ( 5 days 3 hours ) for current city by enabl
 - Testing
   - [UI Tests](https://en.wikipedia.org/wiki/Graphical_user_interface_testing) ([Espresso](https://developer.android.com/training/testing/espresso))
   - [UNIT Tests](https://developer.android.com/training/testing/unit-testing)  generally exercises the functionality of the smallest possible unit of code
+  - [MockK](https://mockk.io/)  mocking library for Kotlin
 - Architecture
   - MVVM Architecture (Model - View - ViewModel)
   - Clean Architecture approach.
