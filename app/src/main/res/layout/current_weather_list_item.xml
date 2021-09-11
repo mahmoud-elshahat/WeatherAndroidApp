@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_marginTop="6dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_height="80dp">
+
+
+    <TextView
+        android:id="@+id/current_weather_min_max_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Min 2.0 - Max 3.0)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_weather_text_city"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/current_weather_image_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="contentDescription" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/current_weather_text_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:maxLines="1"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@+id/wind_icon"
+        app:layout_constraintStart_toEndOf="@+id/current_weather_image_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Egypt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/current_weather_text_temp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/timer"
+        app:layout_constraintStart_toEndOf="@+id/temp_icon"
+        app:layout_constraintTop_toBottomOf="@+id/current_weather_text_city"
+        tools:text="23.02" />
+
+    <TextView
+        android:id="@+id/current_weather_wind_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="20"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/current_weather_text_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/wind_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/current_weather_text_city"
+        app:layout_constraintEnd_toStartOf="@+id/current_weather_wind_speed"
+        app:layout_constraintTop_toTopOf="@+id/current_weather_text_city"
+        app:srcCompat="@drawable/ic__wind_speed"
+        app:tint="@color/purple_500"
+        tools:ignore="HardcodedText"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/temp_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/current_weather_text_city"
+        app:layout_constraintTop_toBottomOf="@+id/current_weather_text_city"
+        app:srcCompat="@drawable/ic_temp"
+        android:layout_marginEnd="4dp"
+        app:tint="@color/purple_500"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/current_weather_min_max_temp"
+        app:layout_constraintEnd_toStartOf="@+id/current_weather_min_max_temp"
+        app:layout_constraintTop_toTopOf="@+id/current_weather_min_max_temp"
+        app:srcCompat="@drawable/ic_hour"
+        app:tint="@color/purple_500"
+        android:contentDescription="@string/app_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

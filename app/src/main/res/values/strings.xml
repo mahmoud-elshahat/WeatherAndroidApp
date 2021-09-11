@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeatherAndroidApp</string>
+    <string name="enter_cities_edit_text_hint">Enter Cities (Min 3- Max 7)</string>
+    <string name="cities_edit_text_explain">* Input Example."London,Egypt,Turkey"</string>
+    <string name="continue_text">Get Cities Weather</string>
+    <string name="specific_cities">Specific Cities Weather</string>
+    <string name="current_city_by_gps">Forecast Based On Location</string>
+    <string name="based_on_location_text">* Get forecast for 5 days 3 hours</string>
+    <string name="or">Or</string>
+    <string name="welcome_message">Welcome to weather app</string>
+</resources>
